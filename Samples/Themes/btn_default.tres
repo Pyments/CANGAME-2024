@@ -1,6 +1,10 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bk8pxu7t0r1u4"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bk8pxu7t0r1u4"]
 
+[ext_resource type="FontFile" uid="uid://b555miqpwlk8i" path="res://Samples/Assets/Pixelme.ttf" id="1_27soc"]
 [ext_resource type="Texture2D" uid="uid://bs2os3kp3clwq" path="res://Samples/Assets/GUI.png" id="1_c35wj"]
+
+[sub_resource type="FontVariation" id="FontVariation_rx0ax"]
+base_font = ExtResource("1_27soc")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_136ar"]
 
@@ -10,14 +14,17 @@ region_rect = Rect2(113, 113, 30, 14)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1aepp"]
 texture = ExtResource("1_c35wj")
-region_rect = Rect2(113, 81, 30, 14)
+region_rect = Rect2(112, 80, 32, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w2lkt"]
 texture = ExtResource("1_c35wj")
 region_rect = Rect2(113, 98, 30, 13)
 
 [resource]
-Button/font_sizes/font_size = 100
+default_font = ExtResource("1_27soc")
+default_font_size = 0
+Button/font_sizes/font_size = 20
+Button/fonts/font = SubResource("FontVariation_rx0ax")
 Button/styles/focus = SubResource("StyleBoxEmpty_136ar")
 Button/styles/hover = SubResource("StyleBoxTexture_6kku7")
 Button/styles/normal = SubResource("StyleBoxTexture_1aepp")
