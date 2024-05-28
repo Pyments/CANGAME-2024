@@ -1,52 +1,79 @@
-[gd_scene load_steps=3 format=3 uid="uid://l2r31ddlibrv"]
+[gd_scene load_steps=7 format=3 uid="uid://l2r31ddlibrv"]
 
-[ext_resource type="Theme" uid="uid://bk8pxu7t0r1u4" path="res://Themes/btn_default.tres" id="1_db3jb"]
+[ext_resource type="Texture2D" uid="uid://bic4estmvsnyl" path="res://Assets/fundo.png" id="1_616sp"]
+[ext_resource type="Script" path="res://btnJogar.gd" id="2_qj5ir"]
+[ext_resource type="Texture2D" uid="uid://b11jx674b16cl" path="res://Assets/btn-jogar.png" id="3_gvd5f"]
+[ext_resource type="Texture2D" uid="uid://bwxyakikcabth" path="res://Assets/btn-sair.png" id="4_84p0h"]
+[ext_resource type="Script" path="res://Menus/btnSair.gd" id="4_r5fp1"]
+[ext_resource type="Script" path="res://Menus/Sair.gd" id="5_ptp7d"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_y5pfa"]
+[node name="Menu" type="Node2D"]
+position = Vector2(3, 4)
+scale = Vector2(0.525767, 0.525767)
 
-[node name="MainMenu" type="Control"]
-process_mode = 3
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_lock_ = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
-self_modulate = Color(0.396078, 0.556863, 0.556863, 1)
+[node name="TextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("CanvasTexture_y5pfa")
-metadata/_edit_lock_ = true
+anchors_preset = -1
+anchor_left = -9.74767
+anchor_right = 53.7523
+anchor_bottom = 35.275
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_616sp")
+metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
+[node name="btnJogar" type="Button" parent="Control"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -69.0
-offset_top = -42.0
-offset_right = 69.0
-offset_bottom = 42.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = -1.49145
+anchor_top = 6.43116
+anchor_right = -1.49145
+anchor_bottom = 6.43116
+offset_left = 771.0
+offset_top = 650.0
+offset_right = 1279.0
+offset_bottom = 777.0
+scale = Vector2(0.708214, 0.708214)
+flat = true
+script = ExtResource("2_qj5ir")
+metadata/_edit_use_anchors_ = true
 
-[node name="Jogar" type="Button" parent="TextureRect/VBoxContainer"]
-custom_minimum_size = Vector2(0, 40)
-layout_mode = 2
-theme = ExtResource("1_db3jb")
-text = "Jogar"
+[node name="Jogar" type="Sprite2D" parent="Control/btnJogar"]
+position = Vector2(251.336, 60.7161)
+scale = Vector2(1.00687, 1.07518)
+texture = ExtResource("3_gvd5f")
 
-[node name="Sair" type="Button" parent="TextureRect/VBoxContainer"]
-custom_minimum_size = Vector2(0, 40)
-layout_mode = 2
-theme = ExtResource("1_db3jb")
-text = "Sair"
+[node name="btnSair" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.49145
+anchor_top = 6.43116
+anchor_right = -1.49145
+anchor_bottom = 6.43116
+offset_left = 813.0
+offset_top = 779.0
+offset_right = 1313.0
+offset_bottom = 906.0
+scale = Vector2(0.539561, 0.539561)
+flat = true
+script = ExtResource("4_r5fp1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sair" type="Sprite2D" parent="Control/btnSair"]
+position = Vector2(250.204, 63.0141)
+texture = ExtResource("4_84p0h")
+script = ExtResource("5_ptp7d")
+
+[connection signal="mouse_entered" from="Control/btnJogar" to="Control/btnJogar" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control/btnJogar" to="Control/btnJogar" method="_on_mouse_exited"]
+[connection signal="pressed" from="Control/btnJogar" to="Control/btnJogar" method="_on_pressed"]
+[connection signal="mouse_entered" from="Control/btnSair" to="Control/btnSair" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control/btnSair" to="Control/btnSair" method="_on_mouse_exited"]
+[connection signal="pressed" from="Control/btnSair" to="Control/btnSair" method="_on_pressed"]

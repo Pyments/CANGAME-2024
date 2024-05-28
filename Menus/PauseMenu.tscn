@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dehnpk20rpoi1"]
+[gd_scene load_steps=5 format=3 uid="uid://dehnpk20rpoi1"]
 
 [ext_resource type="Theme" uid="uid://1ktn338th81n" path="res://Themes/panel_default.tres" id="1_7olyo"]
-[ext_resource type="Theme" uid="uid://bk8pxu7t0r1u4" path="res://Themes/btn_default.tres" id="2_bdtq8"]
+[ext_resource type="Script" path="res://Menus/btnSairMenu.gd" id="2_lblog"]
+[ext_resource type="Texture2D" uid="uid://bwxyakikcabth" path="res://Assets/btn-sair.png" id="3_qfr5t"]
+[ext_resource type="Script" path="res://Menus/Sair.gd" id="4_p408t"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -30,28 +32,27 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_7olyo")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="btnSairMenu" type="Button" parent="Panel"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -68.0
-offset_top = -51.0
-offset_right = 68.0
-offset_bottom = 51.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = -1.49145
+anchor_top = 6.43116
+anchor_right = -1.49145
+anchor_bottom = 6.43116
+offset_left = 813.0
+offset_top = 779.0
+offset_right = 1313.0
+offset_bottom = 906.0
+scale = Vector2(0.539561, 0.539561)
+flat = true
+script = ExtResource("2_lblog")
+metadata/_edit_use_anchors_ = true
 
-[node name="Voltar" type="Button" parent="Panel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 40)
-layout_mode = 2
-theme = ExtResource("2_bdtq8")
-text = "Voltar "
+[node name="Sair" type="Sprite2D" parent="Panel/btnSairMenu"]
+position = Vector2(250.204, 63.0141)
+texture = ExtResource("3_qfr5t")
+script = ExtResource("4_p408t")
 
-[node name="Sair" type="Button" parent="Panel/VBoxContainer"]
-custom_minimum_size = Vector2(0, 40)
-layout_mode = 2
-theme = ExtResource("2_bdtq8")
-text = "Sair"
+[connection signal="mouse_entered" from="Panel/btnSairMenu" to="Panel/btnSairMenu" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/btnSairMenu" to="Panel/btnSairMenu" method="_on_mouse_exited"]
+[connection signal="pressed" from="Panel/btnSairMenu" to="Panel/btnSairMenu" method="_on_pressed"]

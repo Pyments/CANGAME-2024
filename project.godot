@@ -12,7 +12,7 @@ config_version=5
 
 config/name="CANGAME-2024"
 config/description="Projeto de Submissão para o 1º CANGAME - Campeonato De Desenvolvimento De Jogos Digitais, organizado pelo corpo docente do curso de Bacharelado em Sistema de Informação do Centro Universitário do Rio São Francisco – UniRios, que ocorrereu no dia 27 e 28 de maio de 2024"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://Menus/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://Assets/CANGAME.png"
 
