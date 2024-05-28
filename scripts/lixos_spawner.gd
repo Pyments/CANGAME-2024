@@ -13,11 +13,8 @@ func _ready():
 func _on_timer_timeout():
 	if global.vel_y >= 200:
 		get_node("Timer").set_wait_time(randf_range(0.1, 1))
-		print(global.vel_y)
 	else:
 		get_node("Timer").set_wait_time(randf_range(0.1, 3))
-		print(global.vel_y)
-		
 		
 	var lixo = lib_lixos.geraLixoRandomico()
 	

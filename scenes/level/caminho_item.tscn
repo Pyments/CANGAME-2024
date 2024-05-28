@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/caminhoItem.gd" id="1_1chhx"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ly2xi"]
-radius = 8.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g25qp"]
+size = Vector2(80, 16)
 
 [sub_resource type="Gradient" id="Gradient_4er1v"]
 offsets = PackedFloat32Array(0, 0.35, 0.464286, 0.48, 0.5, 0.52, 0.535714, 0.65, 1)
@@ -16,20 +16,18 @@ gradient = SubResource("Gradient_4er1v")
 width = 480
 
 [node name="caminhoItem" type="StaticBody2D" groups=["dropable"]]
-collision_layer = 2
-collision_mask = 0
+z_index = -1
 script = ExtResource("1_1chhx")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ly2xi")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["dropable"]]
+shape = SubResource("RectangleShape2D_g25qp")
 debug_color = Color(0.992157, 0.0862745, 0, 0.0784314)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." groups=["dropable"]]
 offset_left = -96.0
-offset_top = -64.0
+offset_top = -48.0
 offset_right = 96.0
-offset_bottom = 64.0
+offset_bottom = 48.0
 mouse_filter = 2
 texture = SubResource("GradientTexture1D_nab12")
 expand_mode = 1
-metadata/_edit_use_anchors_ = true
