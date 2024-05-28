@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjqdtk1qu1o2k"]
+
+[ext_resource type="PackedScene" uid="uid://dtwxmai7qyjr" path="res://scenes/lixos.tscn" id="1_0vnwm"]
+
+[node name="main" type="Node2D"]
+
+[node name="Lixos" parent="." instance=ExtResource("1_0vnwm")]
+position = Vector2(408, 8)
+
+[node name="Lixos2" parent="." instance=ExtResource("1_0vnwm")]
+position = Vector2(677, 10)
+
+[node name="Lixos3" parent="." instance=ExtResource("1_0vnwm")]
+position = Vector2(537, 8)
