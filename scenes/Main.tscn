@@ -1,132 +1,146 @@
-[gd_scene load_steps=4 format=3 uid="uid://dehbqgu7pesii"]
+[gd_scene load_steps=5 format=3 uid="uid://dehbqgu7pesii"]
 
 [ext_resource type="PackedScene" uid="uid://5o4v7cwluyh6" path="res://scenes/lixos_spawner.tscn" id="1_i0all"]
 [ext_resource type="PackedScene" uid="uid://i1trwvdcwfcc" path="res://scenes/level/caminho_item.tscn" id="2_gtjxw"]
 [ext_resource type="PackedScene" uid="uid://kwwofqsmd0jy" path="res://scenes/lib_lixeiras.tscn" id="3_dg525"]
+[ext_resource type="Texture2D" uid="uid://dssjwqwttkleb" path="res://Assets/background/fundo_768.png" id="4_5gdfr"]
 
 [node name="Main" type="Node2D"]
 
 [node name="lixos_spawner" parent="." instance=ExtResource("1_i0all")]
 
 [node name="caminhoItem" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 48)
 
 [node name="caminhoItem2" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 48)
 
 [node name="caminhoItem3" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 48)
 
 [node name="caminhoItem4" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 48)
 
 [node name="caminhoItem5" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 48)
 
 [node name="caminhoItem6" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 144)
 
 [node name="caminhoItem7" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 144)
 
 [node name="caminhoItem8" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 144)
 
 [node name="caminhoItem9" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 144)
 
 [node name="caminhoItem10" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 144)
 
 [node name="caminhoItem11" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 240)
 
 [node name="caminhoItem12" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 240)
 
 [node name="caminhoItem13" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 240)
 
 [node name="caminhoItem14" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 240)
 
 [node name="caminhoItem15" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 240)
 
 [node name="caminhoItem16" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 336)
 
 [node name="caminhoItem17" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 336)
 
 [node name="caminhoItem18" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 336)
 
 [node name="caminhoItem19" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 336)
 
 [node name="caminhoItem20" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 336)
 
 [node name="caminhoItem21" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 432)
 
 [node name="caminhoItem22" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 432)
 
 [node name="caminhoItem23" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 432)
 
 [node name="caminhoItem24" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 432)
 
 [node name="caminhoItem25" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 432)
 
 [node name="caminhoItem26" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 528)
 
 [node name="caminhoItem27" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 528)
 
 [node name="caminhoItem28" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 528)
 
 [node name="caminhoItem29" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 528)
 
 [node name="caminhoItem30" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 528)
 
 [node name="caminhoItem31" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 100, 0, 1)
 position = Vector2(96, 624)
 
 [node name="caminhoItem32" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 624)
 
 [node name="caminhoItem33" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 1, 100, 1)
 position = Vector2(480, 624)
 
 [node name="caminhoItem34" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(100, 0.2, 0.2, 1)
 position = Vector2(672, 624)
 
 [node name="caminhoItem35" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+modulate = Color(0, 13.571, 0, 1)
 position = Vector2(864, 624)
-
-[node name="caminhoItem36" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
-position = Vector2(96, 720)
-
-[node name="caminhoItem37" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
-position = Vector2(288, 720)
-
-[node name="caminhoItem38" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
-position = Vector2(480, 720)
-
-[node name="caminhoItem39" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
-position = Vector2(672, 720)
-
-[node name="caminhoItem40" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
-position = Vector2(864, 720)
 
 [node name="lib_lixeiras" parent="." instance=ExtResource("3_dg525")]
 
@@ -147,6 +161,21 @@ position = Vector2(672, 696)
 
 [node name="lixeira-vidro" parent="lib_lixeiras" index="4"]
 position = Vector2(864, 696)
+
+[node name="Control" type="Control" parent="."]
+z_index = -5
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+offset_right = 960.0
+offset_bottom = 768.0
+texture = ExtResource("4_5gdfr")
 
 [editable path="lib_lixeiras"]
 [editable path="lib_lixeiras/lixeira-metal"]
