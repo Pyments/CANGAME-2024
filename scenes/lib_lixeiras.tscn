@@ -37,11 +37,11 @@ position = Vector2(512, 32)
 [node name="Sprite2D" parent="lixeira-vidro" index="0"]
 texture = ExtResource("5_rcnbo")
 
-[connection signal="area_entered" from="lixeira-metal/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="lixeira-organico/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="lixeira-papel/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="lixeira-plastico/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="lixeira-vidro/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="lixeira-metal" to="." method="_on_lixeirametal_area_entered"]
+[connection signal="area_entered" from="lixeira-organico" to="." method="_on_lixeiraorganico_area_entered"]
+[connection signal="area_entered" from="lixeira-papel" to="." method="_on_lixeirapapel_area_entered"]
+[connection signal="area_entered" from="lixeira-plastico" to="." method="_on_lixeiraplastico_area_entered"]
+[connection signal="area_entered" from="lixeira-vidro" to="." method="_on_lixeiravidro_area_entered"]
 
 [editable path="lixeira-metal"]
 [editable path="lixeira-organico"]

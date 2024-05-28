@@ -2,7 +2,7 @@ extends Node
 
 var arrastando_objeto = null
 
-var vel_y = 100
+var vel_y = 800
 
 func set_arrastando(obj):
 	arrastando_objeto = obj

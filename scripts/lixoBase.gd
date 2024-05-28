@@ -8,7 +8,7 @@ var refBody
 var offset: Vector2
 var posInicial: Vector2
 
-var vel_y = 200
+var vel_y = global.vel_y
 
 func _ready():
 	set_process(true)
