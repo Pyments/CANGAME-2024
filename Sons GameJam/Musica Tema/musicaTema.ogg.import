@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://134k24xeldyp"
+path="res://.godot/imported/musicaTema.ogg-993c90e85bfe22b1b023d9a3dedf640b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sons GameJam/Musica Tema/musicaTema.ogg"
+dest_files=["res://.godot/imported/musicaTema.ogg-993c90e85bfe22b1b023d9a3dedf640b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
