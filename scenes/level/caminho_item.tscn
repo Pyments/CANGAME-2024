@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/caminhoItem.gd" id="1_1chhx"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8hcb"]
-size = Vector2(32, 48)
+[sub_resource type="CircleShape2D" id="CircleShape2D_ly2xi"]
+radius = 8.0
 
 [sub_resource type="Gradient" id="Gradient_4er1v"]
 offsets = PackedFloat32Array(0, 0.35, 0.464286, 0.48, 0.5, 0.52, 0.535714, 0.65, 1)
@@ -21,7 +21,7 @@ collision_mask = 0
 script = ExtResource("1_1chhx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_f8hcb")
+shape = SubResource("CircleShape2D_ly2xi")
 debug_color = Color(0.992157, 0.0862745, 0, 0.0784314)
 
 [node name="TextureRect" type="TextureRect" parent="."]

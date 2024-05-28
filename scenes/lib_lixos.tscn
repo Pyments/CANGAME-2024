@@ -1,48 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://t6fq2cqp0kfa"]
+[gd_scene load_steps=3 format=3 uid="uid://t6fq2cqp0kfa"]
 
 [ext_resource type="Script" path="res://scripts/lib_lixos.gd" id="1_wno3i"]
-[ext_resource type="Texture2D" uid="uid://sf0ypkkry5ol" path="res://Assets/sprite-lixos/lata-de-refrigerante.png" id="2_a6vch"]
 [ext_resource type="PackedScene" uid="uid://bgfw2s5fvscpy" path="res://scenes/itens/objeto.tscn" id="2_uq5vn"]
-[ext_resource type="Texture2D" uid="uid://beoq0urc3uvug" path="res://Assets/sprite-lixos/garrafa-plastica.png" id="3_ybakc"]
-[ext_resource type="Texture2D" uid="uid://rfq6jjydxeho" path="res://Assets/sprite-lixos/organico-maca.png" id="4_b883v"]
-[ext_resource type="Texture2D" uid="uid://eaidkk6rso51" path="res://Assets/sprite-lixos/vidro-quebrado.png" id="6_lbgf5"]
 
 [node name="lib_lixos" type="Node"]
 script = ExtResource("1_wno3i")
 
 [node name="objeto" parent="." instance=ExtResource("2_uq5vn")]
-
-[node name="objeto2" parent="." instance=ExtResource("2_uq5vn")]
-position = Vector2(88, 0)
-
-[node name="Sprite2D" parent="objeto2" index="0"]
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_a6vch")
-
-[node name="objeto3" parent="." instance=ExtResource("2_uq5vn")]
-position = Vector2(176, 0)
-
-[node name="Sprite2D" parent="objeto3" index="0"]
-scale = Vector2(0.26, 0.26)
-texture = ExtResource("3_ybakc")
-
-[node name="objeto4" parent="." instance=ExtResource("2_uq5vn")]
-position = Vector2(264, 0)
-
-[node name="Sprite2D" parent="objeto4" index="0"]
-position = Vector2(-8, 0)
-scale = Vector2(0.13, 0.13)
-texture = ExtResource("6_lbgf5")
-
-[node name="objeto5" parent="." instance=ExtResource("2_uq5vn")]
-position = Vector2(352, 0)
-
-[node name="Sprite2D" parent="objeto5" index="0"]
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("4_b883v")
-
-[editable path="objeto"]
-[editable path="objeto2"]
-[editable path="objeto3"]
-[editable path="objeto4"]
-[editable path="objeto5"]
