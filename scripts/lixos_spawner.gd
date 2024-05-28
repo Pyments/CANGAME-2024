@@ -4,15 +4,21 @@ var prelib_lixos = preload("res://scenes/lib_lixos.tscn")
 var lib_lixos
 var x_positions = [96, 288, 480, 673, 864]
 var ultima_posicao_ocupada = -1
-var distancia_minima = 200
+var distancia_minima = 300
 
 func _ready():
 	randomize()
 	lib_lixos = prelib_lixos.instantiate()
 	
 func _on_timer_timeout():
-	get_node("Timer").set_wait_time(randf_range(0.3, 0.1))
-	
+	if global.vel_y >= 200:
+		get_node("Timer").set_wait_time(randf_range(0.1, 1))
+		print(global.vel_y)
+	else:
+		get_node("Timer").set_wait_time(randf_range(0.1, 3))
+		print(global.vel_y)
+		
+		
 	var lixo = lib_lixos.geraLixoRandomico()
 	
 	var random_index = randi() % x_positions.size()
