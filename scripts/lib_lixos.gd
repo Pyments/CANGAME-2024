@@ -1,13 +1,18 @@
 extends Node
+@onready var papel = $papel
+@onready var metal = $metal
+@onready var organico = $organico
+@onready var plastico = $plastico
+@onready var vidro = $vidro
 
-var lixos = []
 
 func _ready():
-	lixos.append("objeto")
+	global.papel = papel
+	global.metal = metal
+	global.organico = organico
+	global. plastico = plastico
+	global.vidro = vidro
 	
-func get_lixos():
-	print(lixos)
-	return lixos
 
 func geraLixo(valor):
 	return get_children()[valor].duplicate()
@@ -15,3 +20,17 @@ func geraLixo(valor):
 func geraLixoRandomico():
 	return get_children()[randi() % get_children().size()].duplicate()
 	
+func returnPapel():
+	return global.papel
+	
+func returnMetal():
+	return global.metal
+
+func returnOrganico():
+	return global.organico
+
+func returnPlastico():
+	return global.plastico
+
+func returnVidro():
+	return global.vidro

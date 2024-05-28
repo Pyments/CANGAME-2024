@@ -150,6 +150,9 @@ position = Vector2(96, 712)
 [node name="Sprite2D" parent="lib_lixeiras/lixeira-metal" index="0"]
 position = Vector2(0, -16)
 
+[node name="CollisionShape2D" parent="lib_lixeiras/lixeira-metal" index="1"]
+position = Vector2(0, -72)
+
 [node name="lixeira-organico" parent="lib_lixeiras" index="1"]
 position = Vector2(288, 696)
 
