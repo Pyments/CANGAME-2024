@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://5o4v7cwluyh6" path="res://scenes/lixos_spawner.tscn" id="1_i0all"]
 [ext_resource type="PackedScene" uid="uid://i1trwvdcwfcc" path="res://scenes/level/caminho_item.tscn" id="2_gtjxw"]
+[ext_resource type="PackedScene" uid="uid://kwwofqsmd0jy" path="res://scenes/lib_lixeiras.tscn" id="3_4mw7s"]
 
 [node name="Main" type="Node2D"]
 
