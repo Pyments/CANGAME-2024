@@ -11,20 +11,96 @@ offset_bottom = 768.0
 mouse_filter = 2
 mouse_force_pass_scroll_events = false
 color = Color(0.552941, 0.584314, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="lixos_spawner" parent="." instance=ExtResource("1_i0all")]
 
-[node name="caminhoItem" parent="." instance=ExtResource("2_gtjxw")]
+[node name="caminhoItem" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(96, 64)
 
-[node name="caminhoItem2" parent="." instance=ExtResource("2_gtjxw")]
+[node name="caminhoItem2" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(288, 64)
 
-[node name="caminhoItem3" parent="." instance=ExtResource("2_gtjxw")]
+[node name="caminhoItem3" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(480, 64)
 
-[node name="caminhoItem4" parent="." instance=ExtResource("2_gtjxw")]
+[node name="caminhoItem4" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(672, 64)
 
-[node name="caminhoItem5" parent="." instance=ExtResource("2_gtjxw")]
+[node name="caminhoItem5" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(864, 64)
+
+[node name="caminhoItem6" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 192)
+
+[node name="caminhoItem7" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 192)
+
+[node name="caminhoItem8" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 192)
+
+[node name="caminhoItem9" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 192)
+
+[node name="caminhoItem10" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 192)
+
+[node name="caminhoItem11" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 320)
+
+[node name="caminhoItem12" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 320)
+
+[node name="caminhoItem13" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 320)
+
+[node name="caminhoItem14" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 320)
+
+[node name="caminhoItem15" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 320)
+
+[node name="caminhoItem16" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 448)
+
+[node name="caminhoItem17" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 448)
+
+[node name="caminhoItem18" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 448)
+
+[node name="caminhoItem19" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 448)
+
+[node name="caminhoItem20" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 448)
+
+[node name="caminhoItem21" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 576)
+
+[node name="caminhoItem22" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 576)
+
+[node name="caminhoItem23" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 576)
+
+[node name="caminhoItem24" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 576)
+
+[node name="caminhoItem25" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 576)
+
+[node name="caminhoItem26" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 704)
+
+[node name="caminhoItem27" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 704)
+
+[node name="caminhoItem28" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 704)
+
+[node name="caminhoItem29" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 704)
+
+[node name="caminhoItem30" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 704)

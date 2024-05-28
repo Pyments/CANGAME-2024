@@ -31,6 +31,7 @@ position = Vector2(264, 0)
 
 [node name="Sprite2D" parent="objeto4" index="0"]
 position = Vector2(-8, 0)
+scale = Vector2(0.13, 0.13)
 texture = ExtResource("6_lbgf5")
 
 [node name="objeto5" parent="." instance=ExtResource("2_uq5vn")]
