@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://con18rnwkngmb"]
+[gd_scene load_steps=4 format=3 uid="uid://con18rnwkngmb"]
 
+[ext_resource type="Script" path="res://scripts/obj_lixeira.gd" id="1_6yj4q"]
 [ext_resource type="Texture2D" uid="uid://ckmtos3w6ugdx" path="res://Assets/sprite-lixeiras/lixeira-metal.png" id="1_unjkp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nw2qj"]
 size = Vector2(116, 35.25)
 
 [node name="ObjLixeira" type="Area2D"]
+script = ExtResource("1_6yj4q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.325755, 0.325755)
@@ -14,3 +16,5 @@ texture = ExtResource("1_unjkp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -56)
 shape = SubResource("RectangleShape2D_nw2qj")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
