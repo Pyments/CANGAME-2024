@@ -30,24 +30,21 @@ func _process(delta):
 				tween.tween_property(self,"global_position",posInicial,0.2).set_ease(Tween.EASE_OUT)
 	position += Vector2(0, 1) * vel_y * delta
 	
-func _on_area_2d_mouse_entered():
+func _on_mouse_entered():
 	if not arrastando:
 		arrastavel = true
 		scale = Vector2(1.05, 1.05)
-		
-func _on_area_2d_mouse_exited():
-		if not arrastando:
+
+func _on_mouse_exited():
+	if not arrastando:
 			arrastavel = false
 			scale = Vector2(1, 1)
 
-func _on_area_2d_body_entered(body):
+func _on_body_entered(body):
 	if body.is_in_group("dropable"):
 		dentroCaminho = true
 		refBody = body
-	if body.is_in_group("lixo"):
-		lixoSobrepor = body
-		
-
-func _on_area_2d_body_exited(body):
+	
+func _on_body_exited(body):
 	if body.is_in_group("dropable"):
 		dentroCaminho = false

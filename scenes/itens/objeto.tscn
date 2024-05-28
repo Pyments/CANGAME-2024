@@ -1,7 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgfw2s5fvscpy"]
+[gd_scene load_steps=7 format=3 uid="uid://bgfw2s5fvscpy"]
 
 [ext_resource type="Script" path="res://scripts/lixoBase.gd" id="1_lk40i"]
 [ext_resource type="Texture2D" uid="uid://bfjjbqryubnga" path="res://Assets/sprite-lixos/papel-amassado.png" id="2_katsp"]
+
+[sub_resource type="Curve" id="Curve_mv4ne"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.520642, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_ln6le"]
+curve = SubResource("Curve_mv4ne")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fbmhf"]
+lifetime_randomness = 0.4
+emission_shape_scale = Vector3(1, 1, 0)
+emission_shape = 2
+emission_sphere_radius = 30.0
+direction = Vector3(0, 0, 0)
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 150.0
+radial_accel_max = 200.0
+scale_min = 4.0
+scale_max = 4.0
+scale_curve = SubResource("CurveTexture_ln6le")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wj30s"]
 radius = 41.1096
@@ -9,9 +29,21 @@ radius = 41.1096
 [node name="objeto" type="Area2D" groups=["dragable", "lixo"]]
 script = ExtResource("1_lk40i")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." groups=["lixo"]]
+z_index = -5
+amount = 500
+process_material = SubResource("ParticleProcessMaterial_fbmhf")
+lifetime = 0.6
+local_coords = true
+
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["dragable", "lixo"]]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_katsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["dragable", "lixo"]]
 shape = SubResource("CircleShape2D_wj30s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
