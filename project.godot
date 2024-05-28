@@ -24,7 +24,6 @@ global="*res://scripts/global.gd"
 
 window/size/viewport_width=960
 window/size/viewport_height=768
-window/size/mode=4
 window/stretch/mode="viewport"
 window/vsync/vsync_mode=2
 
