@@ -9,4 +9,3 @@ func _ready():
 func _process(delta):
 	position += Vector2(0, 1) * vel_y * delta
 	pass
-	
