@@ -1,8 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dehbqgu7pesii"]
+[gd_scene load_steps=4 format=3 uid="uid://dehbqgu7pesii"]
 
 [ext_resource type="PackedScene" uid="uid://5o4v7cwluyh6" path="res://scenes/lixos_spawner.tscn" id="1_i0all"]
 [ext_resource type="PackedScene" uid="uid://i1trwvdcwfcc" path="res://scenes/level/caminho_item.tscn" id="2_gtjxw"]
-[ext_resource type="PackedScene" uid="uid://kwwofqsmd0jy" path="res://scenes/lib_lixeiras.tscn" id="3_4mw7s"]
+[ext_resource type="PackedScene" uid="uid://kwwofqsmd0jy" path="res://scenes/lib_lixeiras.tscn" id="3_dg525"]
 
 [node name="Main" type="Node2D"]
 
@@ -127,3 +127,30 @@ position = Vector2(672, 720)
 
 [node name="caminhoItem40" parent="lixos_spawner" instance=ExtResource("2_gtjxw")]
 position = Vector2(864, 720)
+
+[node name="lib_lixeiras" parent="." instance=ExtResource("3_dg525")]
+
+[node name="lixeira-metal" parent="lib_lixeiras" index="0"]
+position = Vector2(96, 712)
+
+[node name="Sprite2D" parent="lib_lixeiras/lixeira-metal" index="0"]
+position = Vector2(0, -16)
+
+[node name="lixeira-organico" parent="lib_lixeiras" index="1"]
+position = Vector2(288, 696)
+
+[node name="lixeira-papel" parent="lib_lixeiras" index="2"]
+position = Vector2(480, 696)
+
+[node name="lixeira-plastico" parent="lib_lixeiras" index="3"]
+position = Vector2(672, 696)
+
+[node name="lixeira-vidro" parent="lib_lixeiras" index="4"]
+position = Vector2(864, 696)
+
+[editable path="lib_lixeiras"]
+[editable path="lib_lixeiras/lixeira-metal"]
+[editable path="lib_lixeiras/lixeira-organico"]
+[editable path="lib_lixeiras/lixeira-papel"]
+[editable path="lib_lixeiras/lixeira-plastico"]
+[editable path="lib_lixeiras/lixeira-vidro"]

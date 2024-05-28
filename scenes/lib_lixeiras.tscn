@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://kwwofqsmd0jy"]
+
+[ext_resource type="Script" path="res://scripts/lib_lixeiras.gd" id="1_ewja1"]
+[ext_resource type="PackedScene" uid="uid://con18rnwkngmb" path="res://scenes/itens/obj_lixeira.tscn" id="1_m2m6d"]
+[ext_resource type="Texture2D" uid="uid://bswe2nshpr6qx" path="res://Assets/sprite-lixeiras/lixeira-organico.png" id="2_xolk4"]
+[ext_resource type="Texture2D" uid="uid://qkc6t3jvh0u" path="res://Assets/sprite-lixeiras/lixeira-papel.png" id="3_s353r"]
+[ext_resource type="Texture2D" uid="uid://dw3dywvlo1bme" path="res://Assets/sprite-lixeiras/lixeira-plastico.png" id="4_q24np"]
+[ext_resource type="Texture2D" uid="uid://bdf2s6ndfbi0c" path="res://Assets/sprite-lixeiras/lixeira-vidro.png" id="5_rcnbo"]
+
+[node name="lib_lixeiras" type="Node"]
+script = ExtResource("1_ewja1")
+
+[node name="lixeira-metal" parent="." instance=ExtResource("1_m2m6d")]
+position = Vector2(32, 32)
+
+[node name="lixeira-organico" parent="." instance=ExtResource("1_m2m6d")]
+position = Vector2(152, 32)
+
+[node name="Sprite2D" parent="lixeira-organico" index="0"]
+texture = ExtResource("2_xolk4")
+
+[node name="lixeira-papel" parent="." instance=ExtResource("1_m2m6d")]
+position = Vector2(272, 32)
+
+[node name="Sprite2D" parent="lixeira-papel" index="0"]
+texture = ExtResource("3_s353r")
+
+[node name="lixeira-plastico" parent="." instance=ExtResource("1_m2m6d")]
+position = Vector2(392, 32)
+
+[node name="Sprite2D" parent="lixeira-plastico" index="0"]
+texture = ExtResource("4_q24np")
+
+[node name="lixeira-vidro" parent="." instance=ExtResource("1_m2m6d")]
+position = Vector2(512, 32)
+
+[node name="Sprite2D" parent="lixeira-vidro" index="0"]
+texture = ExtResource("5_rcnbo")
+
+[connection signal="area_entered" from="lixeira-metal/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="lixeira-organico/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="lixeira-papel/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="lixeira-plastico/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="lixeira-vidro/Area2D" to="." method="_on_area_2d_area_entered"]
+
+[editable path="lixeira-metal"]
+[editable path="lixeira-organico"]
+[editable path="lixeira-papel"]
+[editable path="lixeira-plastico"]
+[editable path="lixeira-vidro"]
