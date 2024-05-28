@@ -1,7 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dehbqgu7pesii"]
-
-[ext_resource type="PackedScene" uid="uid://i1trwvdcwfcc" path="res://scenes/level/caminho_item.tscn" id="1_bwgmb"]
-[ext_resource type="PackedScene" uid="uid://bgfw2s5fvscpy" path="res://scenes/itens/objeto.tscn" id="2_1ybo4"]
+[gd_scene format=3 uid="uid://dehbqgu7pesii"]
 
 [node name="Main" type="Node2D"]
 
@@ -10,18 +7,3 @@ offset_right = 960.0
 offset_bottom = 768.0
 mouse_filter = 2
 mouse_force_pass_scroll_events = false
-
-[node name="objeto" parent="." instance=ExtResource("2_1ybo4")]
-position = Vector2(442, 301)
-
-[node name="caminhoItem" parent="." instance=ExtResource("1_bwgmb")]
-position = Vector2(193, 186)
-
-[node name="caminhoItem2" parent="." instance=ExtResource("1_bwgmb")]
-position = Vector2(687, 197)
-
-[node name="caminhoItem3" parent="." instance=ExtResource("1_bwgmb")]
-position = Vector2(665, 531)
-
-[node name="caminhoItem4" parent="." instance=ExtResource("1_bwgmb")]
-position = Vector2(326, 569)

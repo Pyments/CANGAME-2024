@@ -2,14 +2,13 @@ extends Node2D
 
 var arrastavel = false
 var dentroCaminho = false
-var refBody: StaticBody2D
+var refBody
 var offset: Vector2
 var posInicial: Vector2
 
-func _ready():
+func _process(delta):
 	if arrastavel:
 		if Input.is_action_just_pressed("click"):
-			print("click")
 			posInicial = global_position
 			offset = get_global_mouse_position() - global_position
 			global.arrastando = true		
