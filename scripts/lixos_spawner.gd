@@ -2,7 +2,7 @@ extends Node
 
 var prelib_lixos = preload("res://scenes/lib_lixos.tscn")
 var lib_lixos
-var x_positions = [70, 278, 457, 650, 840]
+var x_positions = [96, 288, 480, 673, 864]
 
 func _ready():
 	randomize()

@@ -1,8 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dehbqgu7pesii"]
 
 [ext_resource type="PackedScene" uid="uid://5o4v7cwluyh6" path="res://scenes/lixos_spawner.tscn" id="1_i0all"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_fsedc"]
+[ext_resource type="PackedScene" uid="uid://i1trwvdcwfcc" path="res://scenes/level/caminho_item.tscn" id="2_gtjxw"]
 
 [node name="Main" type="Node2D"]
 
@@ -11,35 +10,21 @@ offset_right = 960.0
 offset_bottom = 768.0
 mouse_filter = 2
 mouse_force_pass_scroll_events = false
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-self_modulate = Color(0.290196, 1, 1, 1)
-position = Vector2(96, 383.875)
-scale = Vector2(192, 768.25)
-texture = SubResource("CanvasTexture_fsedc")
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-self_modulate = Color(0.391411, 0.548921, 0.579013, 1)
-position = Vector2(288, 384)
-scale = Vector2(192, 768.25)
-texture = SubResource("CanvasTexture_fsedc")
-
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-self_modulate = Color(0.966155, 0.866798, 0.780027, 1)
-position = Vector2(480, 384)
-scale = Vector2(192, 768.25)
-texture = SubResource("CanvasTexture_fsedc")
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-self_modulate = Color(0.784821, 0.447926, 0.532837, 1)
-position = Vector2(672, 384)
-scale = Vector2(192, 768.25)
-texture = SubResource("CanvasTexture_fsedc")
-
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-self_modulate = Color(0.45642, 0.634556, 0.378977, 1)
-position = Vector2(864, 384)
-scale = Vector2(192, 768.25)
-texture = SubResource("CanvasTexture_fsedc")
+color = Color(0.552941, 0.584314, 1, 1)
 
 [node name="lixos_spawner" parent="." instance=ExtResource("1_i0all")]
+
+[node name="caminhoItem" parent="." instance=ExtResource("2_gtjxw")]
+position = Vector2(96, 64)
+
+[node name="caminhoItem2" parent="." instance=ExtResource("2_gtjxw")]
+position = Vector2(288, 64)
+
+[node name="caminhoItem3" parent="." instance=ExtResource("2_gtjxw")]
+position = Vector2(480, 64)
+
+[node name="caminhoItem4" parent="." instance=ExtResource("2_gtjxw")]
+position = Vector2(672, 64)
+
+[node name="caminhoItem5" parent="." instance=ExtResource("2_gtjxw")]
+position = Vector2(864, 64)

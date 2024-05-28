@@ -1,27 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://i1trwvdcwfcc"]
+[gd_scene load_steps=5 format=3 uid="uid://i1trwvdcwfcc"]
 
 [ext_resource type="Script" path="res://scripts/caminhoItem.gd" id="1_1chhx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f8hcb"]
-size = Vector2(128, 128)
+size = Vector2(192, 768)
+
+[sub_resource type="Gradient" id="Gradient_4er1v"]
+offsets = PackedFloat32Array(0, 0.35, 0.464286, 0.48, 0.5, 0.52, 0.535714, 0.65, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0, 1, 0.443137, 0, 0.372549, 1, 0.443137, 0, 0.372549, 1, 1, 1, 1, 1, 0.443137, 0, 0.372549, 1, 0.443137, 0, 0.372549, 1, 0.568627, 0.223529, 0, 1, 1, 1, 0)
+metadata/_snap_enabled = true
+metadata/_snap_count = 28
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nab12"]
+gradient = SubResource("Gradient_4er1v")
+width = 480
 
 [node name="caminhoItem" type="StaticBody2D" groups=["dropable"]]
 script = ExtResource("1_1chhx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 320)
 shape = SubResource("RectangleShape2D_f8hcb")
+debug_color = Color(0.992157, 0.0862745, 0, 0.0784314)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -64.0
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -96.0
 offset_top = -64.0
-offset_right = 64.0
-offset_bottom = 64.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.534361, 0.534361, 0.534361, 1)
+offset_right = 96.0
+offset_bottom = 704.0
+texture = SubResource("GradientTexture1D_nab12")
+expand_mode = 1

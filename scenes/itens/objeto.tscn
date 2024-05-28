@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://bfjjbqryubnga" path="res://Assets/sprite-lixos/papel-amassado.png" id="2_katsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xwbtb"]
-size = Vector2(128, 128)
+size = Vector2(80, 80)
 
 [node name="objeto" type="Node2D"]
 script = ExtResource("1_lk40i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_katsp")
 
 [node name="Area2D" type="Area2D" parent="." groups=["dropable"]]
